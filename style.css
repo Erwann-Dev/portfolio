@@ -1,53 +1,76 @@
 /*Reset CSS*/
-*{
-  margin: 0px;
-  padding: 0px;
-  font-family: Avenir, sans-serif;
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Avenir, sans-serif;
 }
 
-nav{
-  width: 100%;
-  margin: 0px auto 40px auto;
-  background-color: rgb(255, 255, 255);
-  position: sticky;
-  top: 0px;
+nav {
+	width: 100%;
+	margin: 0px auto 40px auto;
+	background-color: rgb(255, 255, 255);
+	position: sticky;
+	top: 0px;
 }
 
-nav ul{
-  list-style-type: none;
+nav ul {
+	list-style-type: none;
 }
 
-nav li{
-  float: left;
-  width: 25%;/*100% divisé par le nombre d'éléments de menu*/
-  text-align: center;/*Centre le texte dans les éléments de menu*/
+nav li {
+	float: left;
+	width: 25%; /*100% divisé par le nombre d'éléments de menu*/
+	text-align: center; /*Centre le texte dans les éléments de menu*/
 }
 
 /*Evite que le menu n'ait une hauteur nulle*/
-nav ul::after{
-  content: "";
-  display: table;
-  clear: both;
+nav ul::after {
+	content: '';
+	display: table;
+	clear: both;
 }
 
-nav a{
-  display: block; /*Toute la surface sera cliquable*/
-  text-decoration: none;
-  color: black;
-  border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
-  padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+nav a {
+	font-size: 100%;
+	display: block; /*Toute la surface sera cliquable*/
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent; /*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+	padding: 10px 0px; /*Agrandit le menu et espace la bordure du texte*/
 }
 
-nav a:hover{
-  color: blue;
-  border-bottom: 2px solid blue;
+nav a:hover {
+	font-size: 130%;
+	color: blue;
+	font-weight: bold;
+	border-bottom: 0.4vh solid blue;
 }
 
-.conteneur{
-margin: 0px 20px;
-height: 1500px;
+.conteneur {
+	margin: 0px 20px;
+	height: 100vh;
 }
 
-#contactpng{
-  height: 20px;
+#contactpng {
+	height: 20px;
+}
+
+p {
+	font-size: 120%;
+}
+
+h1 {
+	font-size: 230%;
+	color: rgb(0, 26, 255);
+	font-weight: 500;
+}
+h3 {
+	font-size: 120%;
+	color: rgb(0, 26, 255);
+	font-weight: 100;
+}
+h4 {
+	font-weight: normal;
+	text-decoration: underline;
+	font-size: 100%;
 }
