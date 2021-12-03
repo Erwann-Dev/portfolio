@@ -3,6 +3,7 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: Avenir, sans-serif;
+	color: white;
 }
 
 p#title {
@@ -56,7 +57,7 @@ div#id3:after {
 #name {
 	user-select: none;
 	height: 100vh;
-	background-color: rgba(0, 255, 255, 0.4);
+	/* background-color: rgba(0, 255, 255, 0.4); */
 	text-align: center;
 }
 
@@ -75,40 +76,29 @@ span#skill_3 {
 	background-color: rgba(165, 42, 42, 0.4);
 }
 
-#div_3 {
+#projet {
 	height: 100vh;
 	background-color: rgba(137, 43, 226, 0.4);
 	position: relative;
 }
 
-@media (max-device-width: 640px) {
-	p#title {
-		font-size: 7em;
-	}
-}
+
 
 #navbar {
 	text-align: center;
 	position: fixed;
 	width: 100%;
-	height: 5em;
 	z-index: 10;
 }
 
 #navbar a {
-	-webkit-appearance: button;
-	-moz-appearance: button;
-	appearance: button;
-
+	font-size: 3em;
 	text-decoration: none;
-	color: initial;
 }
 
 #navbar button {
 	margin-top: 1%;
-	margin-left: 1%;
 	border-radius: 100px;
-	padding: 1%;
 	background-color: rgba(0, 102, 255, 0.6);
 	border-color: rgba(0, 0, 0, 0);
 }
@@ -131,3 +121,27 @@ html {
    ? overflow = tout
 
 */
+
+img{
+	width: 3%;
+}
+/* ! telephone */
+@media (max-device-width: 640px) {
+	p#title {
+		font-size: 7em;
+	}
+	#navbar button {
+		width: 13em;
+		height: 6em;
+	}
+	#navbar a {
+		font-size: 4em;
+	}
+}
+/* ! ordinateur */
+@media (min-device-width: 640px) {
+	#navbar button {
+		width: 12em;
+		height: 5em;
+	}
+}
