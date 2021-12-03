@@ -16,27 +16,6 @@ p#title {
 	transform: translate(-50%, -50%);
 }
 
-.progress {
-	background: #333;
-	border-radius: 13px;
-	height: 1.5em;
-	width: 30em;
-	padding: 3px;
-	position: relative;
-	top: 45%;
-	left: 50%;
-	-ms-transform: translate(-45%, -50%);
-	transform: translate(-45%, -50%);
-}
-
-.progress:after {
-	content: '';
-	display: block;
-	background: green;
-	width: 50%;
-	height: 100%;
-	border-radius: 9px;
-}
 
 div#id1:after {
 	width: 50%;
@@ -65,10 +44,33 @@ span#skill_1,
 span#skill_2,
 span#skill_3 {
 	position: relative;
-	top: 45%;
+	top: 38%;
+	left: 50%;
+	-ms-transform: translate(-38%, -50%);
+	transform: translate(-38%, -50%);
+}
+
+
+.progress {
+	background: #333;
+	border-radius: 13px;
+	height: 1.5em;
+	width: 30em;
+	padding: 3px;
+	position: relative;
+	top: 38%;
 	left: 50%;
 	-ms-transform: translate(-45%, -50%);
 	transform: translate(-45%, -50%);
+}
+
+.progress:after {
+	content: '';
+	display: block;
+	background: green;
+	width: 50%;
+	height: 100%;
+	border-radius: 9px;
 }
 
 #skill {
