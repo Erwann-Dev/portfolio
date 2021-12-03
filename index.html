@@ -5,30 +5,38 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<!-- ! navbar -->
+		<div id="navbar">
+			<button><a data-scroll href="#name">Name</a></button>
+			<button><a data-scroll href="#skill">Skill</a></button>
+		</div>
+
 		<!-- ! Div 1   -->
-		<div id="div_1">
-				<p id="title">
-						Hi, I'm <br> <span id="red">Erwann</span>, <br> a Junior Developer<br />
-				</p>
+		<div id="name">
+			<p id="title">
+				Hi, I'm <br />
+				<span id="red">Erwann</span>, <br />
+				a Junior Developer<br />
+			</p>
 		</div>
 
 		<!-- ! Div 2   -->
-		<div id="div_2">
+		<div id="skill">
 			<span id="skill_1">Skill 1</span>
-			<br><br>
+			<br /><br />
 			<div class="progress" id="id1"></div>
 
-			<span id="skill_2" >Skill 2</span>
-			<br><br>
+			<span id="skill_2">Skill 2</span>
+			<br /><br />
 			<div class="progress" id="id2"></div>
 
 			<span id="skill_3">Skill 3</span>
-			<br><br>
+			<br /><br />
 			<div class="progress" id="id3"></div>
 		</div>
 
-		<div id="div_3">
-
-		</div>
+		<div id="div_3"></div>
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
