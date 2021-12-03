@@ -55,7 +55,7 @@ div#id3:after{
 
 #div_1 {
 	height: 100vh;
-	background-color: aqua;
+	background-color: rgba(0, 255, 255, 0.4);
 	text-align: center;
 }
 
@@ -69,7 +69,13 @@ span#skill_1, span#skill_2, span#skill_3 {
 
 #div_2 {
 	height: 100vh;
-	background-color: brown;
+	background-color: rgba(165, 42, 42, 0.4);
+  position: relative;
+}
+
+#div_3 {
+	height: 100vh;
+	background-color: rgba(137, 43, 226, 0.4);
   position: relative;
 }
 
@@ -77,4 +83,11 @@ span#skill_1, span#skill_2, span#skill_3 {
 	p#title {
 		font-size: 7em;
 	}
+}
+
+body{
+	background-image: url("main_background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
