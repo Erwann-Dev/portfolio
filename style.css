@@ -13,6 +13,36 @@ body {
 html {
 	scroll-behavior: smooth;
 }
+
+/* ! telephone */
+@media (max-device-width: 640px) {
+	p#title {
+		font-size: 7em;
+	}
+	#navbar button {
+		width: 18em;
+		height: 6em;
+	}
+	#navbar a {
+		font-size: 4em;
+	}
+	.progress {
+		top: 50%;
+	}
+	span#skill_1,
+	span#skill_2,
+	span#skill_3 {
+		top: 50%;
+	}
+}
+/* ! ordinateur */
+@media (min-device-width: 640px) {
+	#navbar button {
+		width: 12em;
+		height: 5em;
+	}
+}
+
 /* ! Part navbar */
 #navbar {
 	text-align: center;
@@ -20,12 +50,10 @@ html {
 	width: 100%;
 	z-index: 10;
 }
-
 #navbar a {
 	font-size: 3em;
 	text-decoration: none;
 }
-
 #navbar button {
 	margin-top: 1%;
 	border-radius: 100px;
@@ -41,7 +69,6 @@ html {
 	/* background-color: rgba(0, 255, 255, 0.4); */
 	text-align: center;
 }
-
 p#title {
 	font-size: 5em;
 	margin: 0;
@@ -51,7 +78,6 @@ p#title {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-
 #red {
 	color: red;
 }
@@ -62,29 +88,24 @@ p#title {
 	height: 100vh;
 	background-color: rgba(165, 42, 42, 0.4);
 }
-
 div#id1:after {
 	width: 50%;
 }
-
 div#id2:after {
 	width: 20%;
 }
-
 div#id3:after {
 	width: 85%;
 }
-
 span#skill_1,
 span#skill_2,
 span#skill_3 {
 	position: relative;
-	top: 38%;
-	left: 50%;
-	-ms-transform: translate(-38%, -50%);
-	transform: translate(-38%, -50%);
+	top: 27%;
+	left: 49%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-
 .progress {
 	background: #333;
 	border-radius: 13px;
@@ -92,12 +113,11 @@ span#skill_3 {
 	width: 30em;
 	padding: 3px;
 	position: relative;
-	top: 38%;
+	top: 27%;
 	left: 50%;
-	-ms-transform: translate(-45%, -50%);
-	transform: translate(-45%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-
 .progress:after {
 	content: '';
 	display: block;
@@ -106,40 +126,11 @@ span#skill_3 {
 	height: 100%;
 	border-radius: 9px;
 }
-/* * End of part skills */
-
-
-/* html, body {overflow: hidden;} */
-/* ? code pour faire disparaitre la barre de defilement vertical  
-   ? overflow-y = horizontal
-   ? overflow-x = vertical 
-   ? overflow = tout
-
-*/
-
-span>img {
+#skill span  img {
 	width: 3%;
 }
-/* ! telephone */
-@media (max-device-width: 640px) {
-	p#title {
-		font-size: 7em;
-	}
-	#navbar button {
-		width: 13em;
-		height: 6em;
-	}
-	#navbar a {
-		font-size: 4em;
-	}
-}
-/* ! ordinateur */
-@media (min-device-width: 640px) {
-	#navbar button {
-		width: 12em;
-		height: 5em;
-	}
-}
+/* * End of part skills */
+
 /* ! Part Project  */
 #projet {
 	height: 100vh;
@@ -152,12 +143,15 @@ span>img {
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 }
-
-.div1 {	
-	grid-area: 1 / 1 / 2 / 2;
-	background-color: rgba(0, 255, 255, 0.2);
+#projet img {
+	max-width: 65%;
 }
-.div1 p, .div2 p, .div3 p, .div4 p, .div5 p, .div6 p{
+.div1 p,
+.div2 p,
+.div3 p,
+.div4 p,
+.div5 p,
+.div6 p {
 	text-align: center;
 	position: relative;
 	top: 50%;
@@ -165,31 +159,35 @@ span>img {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+.div1 {
+	grid-area: 1 / 1 / 2 / 2;
+	background-color: rgba(0, 255, 255, 0.2);
+}
 .div2 {
 	grid-area: 1 / 2 / 2 / 3;
-	background-color: blue;
+	background-color: rgba(0, 0, 255, 0.2);
 }
 .div3 {
 	grid-area: 1 / 3 / 2 / 4;
-	background-color: blueviolet;
+	background-color: rgba(137, 43, 226, 0.2);
 }
 .div4 {
 	grid-area: 2 / 1 / 3 / 2;
-	background-color: brown;
+	background-color: rgba(165, 42, 42, 0.2);
 }
 .div5 {
 	grid-area: 2 / 2 / 3 / 3;
-	background-color: burlywood;
+	background-color: rgba(222, 184, 135, 0.2);
 }
 .div6 {
 	grid-area: 2 / 3 / 3 / 4;
-	background-color: chartreuse;
+	background-color: rgba(128, 255, 0, 0.2);
 }
 /* * End of Part Project */
 
 /*  ! Part Contact */
 #contact {
 	height: 100vh;
-	background-color: rgba(226, 43, 186, 0.4);
+	background-color: rgba(73, 226, 43, 0.4);
 }
 /* * End of Part Contact */
