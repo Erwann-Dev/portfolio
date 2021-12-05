@@ -4,6 +4,43 @@
 	font-family: Avenir, sans-serif;
 	color: white;
 }
+body {
+	background-image: url('main_background.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+html {
+	scroll-behavior: smooth;
+}
+/* ! Part navbar */
+#navbar {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+#navbar a {
+	font-size: 3em;
+	text-decoration: none;
+}
+
+#navbar button {
+	margin-top: 1%;
+	border-radius: 100px;
+	background-color: rgba(0, 102, 255, 0.6);
+	border-color: rgba(0, 0, 0, 0);
+}
+/* * End of part navbar */
+
+/* ! Part title / name */
+#name {
+	user-select: none;
+	height: 100vh;
+	/* background-color: rgba(0, 255, 255, 0.4); */
+	text-align: center;
+}
 
 p#title {
 	font-size: 5em;
@@ -13,6 +50,17 @@ p#title {
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+#red {
+	color: red;
+}
+/* * End of part title / name */
+
+/* ! Part skills */
+#skill {
+	height: 100vh;
+	background-color: rgba(165, 42, 42, 0.4);
 }
 
 div#id1:after {
@@ -25,23 +73,6 @@ div#id2:after {
 
 div#id3:after {
 	width: 85%;
-}
-
-#red {
-	color: red;
-}
-
-#name {
-	user-select: none;
-	height: 100vh;
-	/* background-color: rgba(0, 255, 255, 0.4); */
-	text-align: center;
-}
-
-
-#skill {
-	height: 100vh;
-	background-color: rgba(165, 42, 42, 0.4);
 }
 
 span#skill_1,
@@ -75,36 +106,8 @@ span#skill_3 {
 	height: 100%;
 	border-radius: 9px;
 }
+/* * End of part skills */
 
-#navbar {
-	text-align: center;
-	position: fixed;
-	width: 100%;
-	z-index: 10;
-}
-
-#navbar a {
-	font-size: 3em;
-	text-decoration: none;
-}
-
-#navbar button {
-	margin-top: 1%;
-	border-radius: 100px;
-	background-color: rgba(0, 102, 255, 0.6);
-	border-color: rgba(0, 0, 0, 0);
-}
-
-body {
-	background-image: url('main_background.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-
-html {
-	scroll-behavior: smooth;
-}
 
 /* html, body {overflow: hidden;} */
 /* ? code pour faire disparaitre la barre de defilement vertical  

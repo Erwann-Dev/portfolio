@@ -1,3 +1,3 @@
 var scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 50
+	speed: 50,
 });
