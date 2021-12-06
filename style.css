@@ -250,6 +250,15 @@ div#id3:after {
 			'third fourth'
 			'fifth sixth';
 	}
+	.skill {
+		align-items: unset;
+	}
+	.skill #left .content{
+		text-align: center;
+	}
+	.skill #right .content{
+		text-align: center;
+	}
 }
 /* ! ordinateur */
 @media (min-device-width: 640px) {
