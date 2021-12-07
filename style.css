@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -41,6 +45,7 @@ html {
 	text-align: center;
 }
 p#title {
+	font-family: 'Kaushan Script', cursive;
 	font-size: 5em;
 	margin: 0;
 	position: relative;
@@ -50,6 +55,7 @@ p#title {
 	transform: translate(-50%, -50%);
 }
 #red {
+	font-family: 'Kaushan Script', cursive;
 	color: red;
 }
 /* * End of part title / name */
@@ -69,16 +75,24 @@ p#title {
 	background-color: rgba(165, 112, 42, 0.4);
 }
 .skill #left .content {
-	height: 15vh;
+	font-family: 'Comic Neue', cursive;
 	text-align: right;
-	position: relative;
-	/* top: 50%; */
-	/* -ms-transform: translateY(-50%);
-	transform: translateY(-50%); */
-	background-color: rgba(165, 112, 42, 0.877);
+}
+.skill #left .content .title{
+	font-weight: 900;
+	font-family: 'Comic Neue', cursive;
+	font-size: 3em;
+}
+.skill #left .content .name_of_expertise{
+	font-weight: 200;
+	font-size: 2em;
+}
+.skill #left .content .desc_of_expertise{
+	font-weight: 100;
+	font-size: 1em;
 }
 .skill #left .content img {
-	width: 10%;
+	width: 50%;
 }
 .skill #right {
 	background-color: rgba(165, 42, 42, 0.4);
