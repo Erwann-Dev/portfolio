@@ -52,12 +52,12 @@ html {
 
 /* ! Part title / name */
 #name {
+	font-family: 'Kaushan Script', cursive;
 	user-select: none;
 	height: 100vh;
-	/* background-color: rgba(0, 255, 255, 0.4); */
 	text-align: center;
 }
-p#title {
+#title {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 5em;
 	margin: 0;
@@ -67,9 +67,8 @@ p#title {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-#red {
+#title span  {
 	font-family: 'Kaushan Script', cursive;
-	color: red;
 }
 
 /* ! Part skills */
