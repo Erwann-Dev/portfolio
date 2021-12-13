@@ -37,7 +37,6 @@ html {
 	background-color: rgba(0, 102, 255, 0.6);
 	border-color: rgba(0, 0, 0, 0);
 }
-/* * End of part navbar */
 
 /* ! Part title / name */
 #name {
@@ -60,7 +59,6 @@ p#title {
 	font-family: 'Kaushan Script', cursive;
 	color: red;
 }
-/* * End of part title / name */
 
 /* ! Part skills */
 .skill {
@@ -130,7 +128,6 @@ div#id3:after {
 .skill #right .content span img {
 	width: 5%;
 }
-/* * End of part skills */
 
 /* ! Part Project  */
 .project {
@@ -190,7 +187,6 @@ div#id3:after {
 	grid-area: sixth;
 	background-color: rgba(128, 255, 0, 0.2);
 }
-/* * End of Part Project */
 
 /*  ! Part Contact */
 .contact {
@@ -220,22 +216,23 @@ div#id3:after {
 	background-color: rgba(216, 112, 147, 0.3);
 }
 
-/* * End of Part Contact */
 
 /* ! telephone */
 @media (max-device-width: 640px) {
-	p#title {
-		font-size: 7em;
-	}
+
 	#navbar button {
 		width: 18em;
 		height: 6em;
 	}
 	#navbar a {
 		font-size: 4em;
+	}	
+	p#title {
+		font-size: 7em;
 	}
 	.skill {
-		height: 100vh;
+		height: 50vh;
+		align-items: unset;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, 1fr);
@@ -254,10 +251,16 @@ div#id3:after {
 		background-color: rgba(165, 42, 42, 0.4);
 		grid-area: 1 / 1 / 2 / 2;
 	}
+	.skill #left .content{
+		text-align: center;
+	}
+	.skill #right .content{
+		text-align: center;
+	}
 	.project {
 		height: 50vh;
-		margin-left: 4vh;
-		margin-right: 4vh;
+		margin-left: 2vh;
+		margin-right: 2vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
@@ -266,16 +269,6 @@ div#id3:after {
 			'first second'
 			'third fourth'
 			'fifth sixth';
-	}
-	.skill {
-		height: 50vh;
-		align-items: unset;
-	}
-	.skill #left .content{
-		text-align: center;
-	}
-	.skill #right .content{
-		text-align: center;
 	}
 	.contact{
 		height: 50vh;
