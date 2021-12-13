@@ -30,6 +30,8 @@ html {
 	text-decoration: none;
 }
 #navbar button {
+	width: 12em;
+	height: 5em;
 	margin-top: 1%;
 	border-radius: 100px;
 	background-color: rgba(0, 102, 255, 0.6);
@@ -253,6 +255,7 @@ div#id3:after {
 		grid-area: 1 / 1 / 2 / 2;
 	}
 	.project {
+		height: 50vh;
 		margin-left: 4vh;
 		margin-right: 4vh;
 		display: grid;
@@ -265,6 +268,7 @@ div#id3:after {
 			'fifth sixth';
 	}
 	.skill {
+		height: 50vh;
 		align-items: unset;
 	}
 	.skill #left .content{
@@ -273,11 +277,7 @@ div#id3:after {
 	.skill #right .content{
 		text-align: center;
 	}
-}
-/* ! ordinateur */
-@media (min-device-width: 640px) {
-	#navbar button {
-		width: 12em;
-		height: 5em;
+	.contact{
+		height: 50vh;
 	}
 }
