@@ -17,6 +17,10 @@ body {
 html {
 	scroll-behavior: smooth;
 }
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
 .orange {
 	color: orange;
 }
@@ -28,6 +32,9 @@ html {
 }
 .red {
 	color: red;
+}
+.title{
+	text-decoration: underline;
 }
 
 /* ! Part navbar */
@@ -201,7 +208,6 @@ div#id3:after {
 /*  ! Part Contact */
 .contact {
 	height: 100vh;
-	background-color: rgba(73, 226, 43, 0.4);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -212,18 +218,43 @@ div#id3:after {
 		'Discord Mail';
 }
 .main_text {
+	text-align: center;
 	grid-area: Main_text;
-	background-color: rgba(100, 0, 0, 0.4);
+}
+.main_text .content{
+	margin-top: 20%;
+	font-size: 2em;
+}
+.main_text .content .title{
+	font-size: 2em;
 }
 
-.discord {
+#discord {
+	font-size: 2.5em;
+	text-align: center;
 	grid-area: Discord;
-	background-color: rgba(255, 217, 0, 0.2);
+}
+#discord p{
+	margin-top: 50%;
+	transform: translatey(-50%);
+}
+#discord img{
+	margin-top: 20px;
+	width: 8em;
 }
 
-.mail {
+#mail {
+	font-size: 2.5em;
+	text-align: center;
 	grid-area: Mail;
-	background-color: rgba(216, 112, 147, 0.3);
+}
+#mail p{
+	margin-top: 50%;
+	transform: translatey(-50%);
+}
+#mail img{
+	margin-top: 20px;
+	width: 8em;
 }
 
 /* ! telephone */
